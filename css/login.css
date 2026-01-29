@@ -48,6 +48,15 @@ input[type="radio"] {
     width: 20vh;
 }
 
+.cargar{
+    opacity: 0;
+    animation: blink infinite 2s;
+}
+
+.logoPosExitoLogin img{
+    width: 20vh;
+}
+
 
 /*-------IMPORTATE LA OPACIDAD PARA QUE SE HAGA VISIBLE-------*/
 .panelLogin{
@@ -174,7 +183,20 @@ input[type="radio"] {
     align-items: center;
 }
 
-#logo:checked ~ .logo, #formLogin:checked ~ .panelLogin, #exitoLogin:checked ~ .ingresoExitoso{
+.index{
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+
+
+#logo:checked ~ .logo,
+#formLogin:checked ~ .panelLogin,
+#exitoLogin:checked ~ .ingresoExitoso,
+#cargar:checked ~ .cargar,
+#index:checked ~ .index {
     opacity: 1;
     pointer-events: auto;
 }
