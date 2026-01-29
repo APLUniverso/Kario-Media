@@ -27,7 +27,6 @@ body{
 .position{
     position: absolute;
     pointer-events: none;
-    transition: all 0.6s ease;
 }
 
 /*SE OCULTAN LOS BONOTES*/
@@ -39,24 +38,10 @@ input[type="radio"] {
 
 
 /*-------IMPORTATE LA OPACIDAD PARA QUE SE HAGA VISIBLE-------*/
-.logo{
-    opacity: 0;
-}
-
 .logo img{
     width: 20vh;
-    animation: blink infinite 2s;
+    animation: blink infinite 1s;
 }
-
-.cargar{
-    opacity: 0;
-}
-
-.logoPosExitoLogin img{
-    width: 20vh;
-    animation: blink infinite 2s;
-}
-
 
 /*-------IMPORTATE LA OPACIDAD PARA QUE SE HAGA VISIBLE-------*/
 .panelLogin{
@@ -185,28 +170,32 @@ input[type="radio"] {
 
 .index{
     opacity: 0;
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    height: 100%;
     background-color: white;
 }
 
-
-
-#logo:checked ~ .logo,
-#formLogin:checked ~ .panelLogin,
-#exitoLogin:checked ~ .ingresoExitoso,
-#cargar:checked ~ .cargar,
-#index:checked ~ .index {
+#formLogin:checked ~ .panelLogin{
+    animation: showContent 0.8s ease forwards;
+    animation-delay: 2s;
+    pointer-events: auto;
+}
+#exitoLogin:checked ~ .ingresoExitoso{
     opacity: 1;
+    pointer-events: auto;
+}
+#index:checked ~ .index {
+    animation: showContent 0.8s ease forwards;
+    animation-delay: 2s;
     pointer-events: auto;
 }
 
 @keyframes blink {
-    0%,100%{
-        opacity: 1;
-    }
+    0%,100%{ opacity: 1; }
+    50%{ opacity: 0; }
+}
 
-    50%{
-        opacity: 0;
-    }
+@keyframes showContent {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
