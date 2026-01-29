@@ -249,10 +249,8 @@ input[type="radio"] {
     pointer-events: auto;
 }
 #index:checked ~ .index {
-    opacity: 1;
-    /* ANIMACION ELIMINADA MIENTRAS ARREGAMOS LA PAGINA INDEX
     animation: showContent 0.8s ease forwards;
-    animation-delay: 2s;*/
+    animation-delay: 2s;
     pointer-events: auto;
 }
 
