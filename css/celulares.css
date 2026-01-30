@@ -30,13 +30,16 @@
         grid-column: 1/1;
         position: absolute;
     }
+
+    .index label{
+        grid-column: 1/4;
+        display: block;
+    }
     
     .index .logo{
         margin-left: 20px;
-        justify-self: start;
-        grid-column: 1/4;
     }
-    
+
     .perfil{
         grid-column: 7/10;
     }
@@ -92,7 +95,26 @@
 
     .desaparecer{
         position: absolute;
+    }
 
+    .index .iconos{
+        gap: 0;
+    }
+
+    .iconos i{
+        margin-bottom: 150px;
+    }
+
+    .index main{
+        background-color: white;
+    }
+
+    .index h1{
+        text-align: center;
+    }
+
+    .btn{
+        margin-bottom: 20px;
     }
 
     #sideBar:checked ~ .sideBar{
@@ -104,14 +126,6 @@
 }
 
 /*MINIMO ANTES DE ROMPERCE*/
-
-
-/* TABLET */
-@media (min-width: 481px) and (max-width: 768px){
-    body{
-        background-color: blue;
-    }
-}
 
 @keyframes desplazameinto {
     from{

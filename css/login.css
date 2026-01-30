@@ -213,12 +213,16 @@ input[type="checkbox"] {
     justify-content: space-around;
 }
 
-.index .logo{
+.index label{
     grid-column: 5/6;
-    width: 30px ;
 
-    justify-self: center;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index .logo{
+    width: 30px ;
 }
 
 .perfil{
@@ -274,8 +278,10 @@ input[type="checkbox"] {
 }
 
 .contenido{
-    display: grid;
-    grid-template-columns: auto auto;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    display: flex;
+    gap: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -285,11 +291,13 @@ input[type="checkbox"] {
 }
 
 .index .iconos{
-    display: grid;
+    /* display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    justify-content: space-around;
+    justify-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
     font-size: 30px;
-    gap: 10px;
 }
 
 .iconos i{
@@ -393,11 +401,8 @@ input[type="checkbox"] {
     pointer-events: auto;
 }
 #index:checked ~ .index {
-    opacity: 1;
-    /*
     animation: showContent 0.8s ease forwards;
     animation-delay: 2s;
-    */
     pointer-events: auto;
 }
 
