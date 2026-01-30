@@ -1,6 +1,7 @@
 /* CELULARES */
 @media (max-width: 480px){
     body{
+        background-color: red;
         width: 100vw;
         height: 100vh;
     }
@@ -16,12 +17,41 @@
         padding-bottom: 20px;
     }
 
-    .index header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .tresQuintos{
+        display: none;
+        opacity: 0;
+        grid-column: 1/1;
+        position: absolute;
+    }
+    
+    .dosQuintos{
+        display: none;
+        opacity: 0;
+        grid-column: 1/1;
+        position: absolute;
+    }
+    
+    .index .logo{
+        margin-left: 20px;
+        justify-self: start;
+        grid-column: 1/4;
+    }
+    
+    .perfil{
+        grid-column: 7/10;
+    }
+
+    .index p{
+        text-align: center;
+    }
+
+    #sideBar:checked ~ .sideBar{
+        opacity: 1;
     }
 }
+
+/*MINIMO ANTES DE ROMPERCE*/
+
 
 /* TABLET */
 @media (min-width: 481px) and (max-width: 768px){
