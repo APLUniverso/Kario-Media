@@ -301,8 +301,8 @@ input[type="checkbox"] {
 
 .tabla {
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
@@ -359,7 +359,6 @@ input[type="checkbox"] {
 }
 
 .modelado{
-    grid-column: 1/10;
 
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr;
@@ -374,6 +373,11 @@ input[type="checkbox"] {
 .modelado p{
     align-self: center;
     color: #797979;
+}
+
+.indice{
+    border: none;
+    height: auto;
 }
 
 
