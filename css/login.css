@@ -63,9 +63,7 @@ input[type="checkbox"] {
     align-items: center;
     gap: 10px;
 
-    margin-left: 5vh;
-    margin-right: 5vh;
-    margin-bottom: 5vh;
+    margin: 5vh;
 }
 
 .panelLogin label{
@@ -78,7 +76,7 @@ input[type="checkbox"] {
     border: 1px solid #AAAAAA;
     padding-left: 10px;
     height: 3vh;
-    width: 40vh;
+    width: 400px;
 }
 
 .panelLogin span{
@@ -86,12 +84,15 @@ input[type="checkbox"] {
 }
 
 .panelLogin img{
-    margin-top: 30px;
     width: 7vh;
 }
 
-.panelLogin h3{
+h3{
     color: #797979;
+    font-size: small;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin-top: 5px;
 }
 
 .panelLogin h1{
@@ -99,6 +100,7 @@ input[type="checkbox"] {
     padding: 0;
     font-size: 3vh;
     text-align: center;
+    max-width: 40vw;
 }
 
 .panelLogin p{
@@ -123,6 +125,8 @@ input[type="checkbox"] {
     color: white;
     background-color: #ff721b;
     padding: 1vh 5vh 1vh 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     border-radius: 5vh;
 }
 
@@ -154,10 +158,6 @@ input[type="checkbox"] {
 .ingresoExitoso p{
     color: #797979;
     text-align: center;
-}
-
-.ingresoExitoso h3{
-    color: #797979;
 }
 
 .ingresoExitoso img{
@@ -306,6 +306,12 @@ input[type="checkbox"] {
 
 .tabla h3{
     font-size: 15px;
+
+    color: black;
+    font-weight: bold;
+    font-size: normal;
+    letter-spacing: normal;
+    margin-top: 0;
 }
 
 .tabla {

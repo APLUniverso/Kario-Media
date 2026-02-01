@@ -1,7 +1,6 @@
 /* CELULARES */
 @media (max-width: 480px){
     body{
-        background-color: red;
         width: 100vw;
         height: 100vh;
     }
@@ -125,13 +124,3 @@
     }
 }
 
-/*MINIMO ANTES DE ROMPERCE*/
-
-@keyframes desplazameinto {
-    from{
-        transform: translateX(-20%);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
