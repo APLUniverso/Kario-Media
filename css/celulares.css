@@ -9,6 +9,10 @@
         width: 95vw;
     }
 
+    .panelLogin input{
+        width: 80vw;
+    }
+
     .ingresoExitoso{
         width: 95vw;
         margin: 0;
