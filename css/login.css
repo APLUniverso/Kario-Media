@@ -114,6 +114,10 @@ h3{
     font-size: 9px !important;
 }
 
+.btn{
+    transition: ease 0.3s;
+}
+
 .panelLogin .btn{
     display: flex;
     align-items: center;
@@ -524,7 +528,7 @@ i{
     transition: ease 0.1s;
 }
 
-.logoutPanel .btn:hover{
+.btn:hover{
     background-color: #b65112;
     transform: scale(1.08);
 }
