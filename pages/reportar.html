@@ -17,7 +17,7 @@
     <meta name="description" content="Modulo de reporte de problemas del panel Kairo Media">
 </head>
 <body>
-
+    <input type="checkbox" name="logOut" id="logOut">
     <header>
         <nav class="tresQuintos">
             <a href="./añadir.html">
@@ -47,7 +47,7 @@
         <div class="perfil">
             <i class="fa-solid fa-gear"></i>
             <i class="fa-solid fa-bell"></i>
-            <img src="../media/pp.png" alt="perfil de usuario">
+            <label for="logOut"><img src="../media/pp.png" alt="imagen de foto de perfil de usuario"></label>
         </div>
     </header>
 
@@ -72,6 +72,27 @@
             </button>
         </form>
     </main>
+    <div class="logoutPanel">
+        <div class="infoPerfil">
+            <img src="../media/pp.png" alt="foto de perfil de usuario">
+            <div>
+                <h4>Pedro Gomez</h4>
+                <h3>Pedro Felipe Gomez Bonilla</h3 >
+            </div>
+        </div>
 
+        <div class="options">
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuraciones</a>
+            <a href="#"><i class="fa-solid fa-bell"></i>Notificaciones</a>
+            <hr>
+            <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i>Cambiar de cuenta</a>
+            <a href="#"><i class="fa-solid fa-moon"></i>Tema oscuro</a>
+        </div>
+
+        <div class="log">
+            <a href="../index.html" class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar cesion</a>
+            <a href="#" class="btn"><i class="fa-solid fa-user-plus"></i>Añadir Cuenta</a>
+        </div>
+    </div>
 </body>
 </html>
